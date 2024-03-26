@@ -16,6 +16,7 @@ namespace ГИБДД
         {
             InitializeComponent();
             MessageBox.Show("test");
+            MessageBox.Show("dad");
         }
     }
 }
