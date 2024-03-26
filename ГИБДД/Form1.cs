@@ -15,6 +15,7 @@ namespace ГИБДД
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show("test");
         }
     }
 }
