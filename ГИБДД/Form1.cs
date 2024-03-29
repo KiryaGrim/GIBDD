@@ -12,6 +12,8 @@ namespace ГИБДД
 {
     public partial class Form1 : Form
     {
+        authDB auth = new authDB();
+
         public Form1()
         {
             InitializeComponent();
