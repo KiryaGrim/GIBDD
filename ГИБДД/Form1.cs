@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace bgfghfgd
+namespace ГИБДД
 {
     public partial class Form1 : Form
     {
@@ -17,26 +17,13 @@ namespace bgfghfgd
         {
             InitializeComponent();
             txtPassword.UseSystemPasswordChar = true;
-            
-        
-
-
-    }
-
-    private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-           // Properties.Settings.Default. = checkBox1.Checked;
-            Properties.Settings.Default.Save();
+            var oldSettings = SettingsManager.GetSettings();
+            oldSettings.IsRemember = checkBox1.Checked;
+            SettingsManager.SaveSettings(oldSettings);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,7 +34,6 @@ namespace bgfghfgd
             {
                 MessageBox.Show("Добро пожаловать, " + username + "!");
             }
-
             else
             {
                 MessageBox.Show("Неверные данные, попробуйте ещё раз.");
@@ -56,7 +42,7 @@ namespace bgfghfgd
 
        private void Form1_Load(object sender, EventArgs e)
         {
-          //  checkBox1.Checked = Properties.Settings.Default.IsRemember;
+            checkBox1.Checked = SettingsManager.GetSettings().IsRemember;
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)

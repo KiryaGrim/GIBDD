@@ -1,4 +1,4 @@
-﻿namespace bgfghfgd
+﻿namespace ГИБДД
 {
     partial class Form1
     {
@@ -58,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Логин";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -76,7 +75,6 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(303, 20);
             this.txtUsername.TabIndex = 3;
-            this.txtUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtPassword
             // 
