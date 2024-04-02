@@ -12,6 +12,7 @@ namespace ГИБДД
 {
     public partial class Form2 : Form
     {
+        Bitmap imageFile = null;
         public Form2()
         {
             InitializeComponent();
@@ -19,28 +20,42 @@ namespace ГИБДД
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Открываем диалог выбора файла
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "JPG Files|*.jpg|PNG Files|*.png";
-            openFileDialog.Multiselect = false;
-            openFileDialog.Title = "Выберите фотографию водителя";
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.InitialDirectory = "C:\\";
+            openFileDialog1.Filter = "image files (*.jpeg)|*.jpeg|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+           
+
+
+
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                // Проверяем, соответствует ли выбранный файл заданным условиям
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                Bitmap bitmap = new Bitmap(openFileDialog.FileName);
-                /*if (4 * bitmap.Width != 3 * bitmap.Height || bitmap.Width > 2000 || bitmap.Height > 2000)
+                imageFile = new Bitmap(openFileDialog1.FileName);
+                if (4* imageFile.Width != 3 * imageFile.Height)
                 {
                     MessageBox.Show("Выбранный файл не соответствует заданным параметрам", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    // Если все условия выполнены, прикрепляем изображение к кнопке*/
-                    pictureBox1.Image = bitmap;
-                    button1.Controls.Add(pictureBox1);
-                //}
+                                   
+              pictureBox1.Image = imageFile;
+                }
             }
+
+        }
+
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
