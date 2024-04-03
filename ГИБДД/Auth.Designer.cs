@@ -42,7 +42,7 @@
             // 
             this.LogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LogIn.Location = new System.Drawing.Point(460, 405);
-            this.LogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogIn.Margin = new System.Windows.Forms.Padding(4);
             this.LogIn.Name = "LogIn";
             this.LogIn.Size = new System.Drawing.Size(100, 28);
             this.LogIn.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Location = new System.Drawing.Point(319, 174);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(403, 22);
             this.txtUsername.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Location = new System.Drawing.Point(319, 279);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(403, 22);
             this.txtPassword.TabIndex = 4;
@@ -95,7 +95,7 @@
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(319, 311);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(101, 20);
             this.checkBox1.TabIndex = 5;
@@ -108,7 +108,7 @@
             this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(580, 311);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(142, 20);
             this.checkBox2.TabIndex = 6;
@@ -116,7 +116,7 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // Form1
+            // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,9 +128,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LogIn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Авторизация";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Auth";
+            this.Text = "7";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
