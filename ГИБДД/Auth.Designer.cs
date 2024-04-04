@@ -130,7 +130,7 @@
             this.Controls.Add(this.LogIn);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Auth";
-            this.Text = "7";
+            this.Text = "Авторизация";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -97,5 +97,8 @@
   <ItemGroup>
     <None Include="Resources\инспектор.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\gibdd_logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
