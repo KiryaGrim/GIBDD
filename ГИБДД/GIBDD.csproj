@@ -55,11 +55,23 @@
     <Compile Include="Auth.Designer.cs">
       <DependentUpon>Auth.cs</DependentUpon>
     </Compile>
+    <Compile Include="DriverCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverCard.Designer.cs">
+      <DependentUpon>DriverCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DriverCreating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DriverCreating.Designer.cs">
       <DependentUpon>DriverCreating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,8 +79,14 @@
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DriverCard.resx">
+      <DependentUpon>DriverCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DriverCreating.resx">
       <DependentUpon>DriverCreating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

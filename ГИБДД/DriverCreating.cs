@@ -17,7 +17,7 @@ namespace GIBDD
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ChoosePhoto_Click(object sender, EventArgs e)
         {
             // Открываем диалог выбора файла
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -36,11 +36,16 @@ namespace GIBDD
                 }
                 else
                 {
-                    // Если все условия выполнены, прикрепляем изображение к кнопке*/
+                    // Если все условия выполнены, прикрепляем изображение к кнопке
                     pictureBox1.Image = bitmap;
-                    button1.Controls.Add(pictureBox1);
+                    ChoosePhoto.Controls.Add(pictureBox1);
                 }
             }
+        }
+
+        private void CreateDriver_Click(object sender, EventArgs e)
+        {
+            //Создание водителя
         }
     }
 }

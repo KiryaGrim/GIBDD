@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Timers;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using ГИБДД;
 
 namespace GIBDD
 {
@@ -21,7 +23,11 @@ namespace GIBDD
         public Auth()
         {
             InitializeComponent();
+
             txtPassword.UseSystemPasswordChar = true;
+
+            timer.Interval = 30000;
+            timer.Tick += Timer_Tick;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -37,9 +43,9 @@ namespace GIBDD
             string password = txtPassword.Text;
             if (username == "inspector" && password == "inspector")
             {
-                DriverCreating driverCreating = new DriverCreating();
+                MainWindow mainWindow = new MainWindow();
                 this.Hide();
-                driverCreating.Show();
+                mainWindow.Show();
             }
             else
             {
