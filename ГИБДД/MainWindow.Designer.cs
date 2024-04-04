@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "",
+            ""}, -1);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.CreateDriver = new System.Windows.Forms.Button();
-            this.ReloadTable = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.GUID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Фамилия = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Имя = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Отчество = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Паспорт = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Адрес_регистрации = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Телефон = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Почта = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // CreateDriver
             // 
-            this.CreateDriver.Location = new System.Drawing.Point(43, 26);
+            this.CreateDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CreateDriver.Location = new System.Drawing.Point(43, 28);
             this.CreateDriver.Name = "CreateDriver";
-            this.CreateDriver.Size = new System.Drawing.Size(109, 32);
+            this.CreateDriver.Size = new System.Drawing.Size(129, 48);
             this.CreateDriver.TabIndex = 0;
             this.CreateDriver.Text = "Создать";
             this.CreateDriver.UseVisualStyleBackColor = true;
             this.CreateDriver.Click += new System.EventHandler(this.CreateDriver_Click);
-            // 
-            // ReloadTable
-            // 
-            this.ReloadTable.Location = new System.Drawing.Point(188, 26);
-            this.ReloadTable.Name = "ReloadTable";
-            this.ReloadTable.Size = new System.Drawing.Size(139, 32);
-            this.ReloadTable.TabIndex = 1;
-            this.ReloadTable.Text = "Перезагрузить";
-            this.ReloadTable.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -66,13 +68,40 @@
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.GUID,
+            this.Фамилия,
+            this.Имя,
+            this.Отчество,
+            this.Паспорт,
+            this.Адрес_регистрации,
+            this.Телефон,
+            this.Почта});
             this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
             this.listView1.Location = new System.Drawing.Point(43, 115);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(974, 407);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
+            // 
+            // Имя
+            // 
+            this.Имя.DisplayIndex = 6;
+            // 
+            // Отчество
+            // 
+            this.Отчество.DisplayIndex = 7;
+            // 
+            // Телефон
+            // 
+            this.Телефон.DisplayIndex = 2;
+            // 
+            // Почта
+            // 
+            this.Почта.DisplayIndex = 3;
             // 
             // MainWindow
             // 
@@ -81,7 +110,6 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ReloadTable);
             this.Controls.Add(this.CreateDriver);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
@@ -94,8 +122,15 @@
         #endregion
 
         private System.Windows.Forms.Button CreateDriver;
-        private System.Windows.Forms.Button ReloadTable;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader GUID;
+        private System.Windows.Forms.ColumnHeader Фамилия;
+        private System.Windows.Forms.ColumnHeader Телефон;
+        private System.Windows.Forms.ColumnHeader Почта;
+        private System.Windows.Forms.ColumnHeader Паспорт;
+        private System.Windows.Forms.ColumnHeader Адрес_регистрации;
+        private System.Windows.Forms.ColumnHeader Имя;
+        private System.Windows.Forms.ColumnHeader Отчество;
     }
 }

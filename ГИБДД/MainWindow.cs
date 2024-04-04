@@ -18,11 +18,10 @@ namespace ГИБДД
             InitializeComponent();
         }
 
-        private void CreateDriver_Click(object sender, EventArgs e)
+        private void CreateDriver_Click(object sender, EventArgs e) // Кнопка "Создать", которая открывает окно создания водителя
         {
             DriverCreating driverCreating = new DriverCreating();
-            this.Hide();
-            driverCreating.Show();
+            driverCreating.Show();            
         }
     }
 }

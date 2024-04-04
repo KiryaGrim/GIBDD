@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ГИБДД;
 
 namespace GIBDD
 {
@@ -43,9 +44,10 @@ namespace GIBDD
             }
         }
 
-        private void SaveDriver_Click(object sender, EventArgs e)
+        private void SaveDriver_Click(object sender, EventArgs e) // Созданение изменений карты водителя
         {
-            //Сохранение изменений карточики водителя
+            this.Hide();
+            MessageBox.Show("Данные были успешно сохранены");
         }
     }
 }

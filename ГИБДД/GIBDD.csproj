@@ -55,6 +55,7 @@
     <Compile Include="Auth.Designer.cs">
       <DependentUpon>Auth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Driver.cs" />
     <Compile Include="DriverCard.cs">
       <SubType>Form</SubType>
     </Compile>

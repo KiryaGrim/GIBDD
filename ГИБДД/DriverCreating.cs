@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ГИБДД;
 
 namespace GIBDD
 {
     public partial class DriverCreating : Form
-    {        
+    {
         public DriverCreating()
         {
             InitializeComponent();
@@ -43,9 +44,25 @@ namespace GIBDD
             }
         }
 
-        private void CreateDriver_Click(object sender, EventArgs e)
+        private void CreateDriver_Click(object sender, EventArgs e) // Создаем водителя
         {
-            //Создание водителя
+            Driver driver = new Driver();
+            driver.Guid = Guid.NewGuid();
+            driver.FirstName = textBox2.Text;
+            driver.LastName = textBox3.Text;
+            driver.Patronymic = textBox4.Text;
+            driver.Passport = textBox5.Text;
+            driver.RegistationAddress = textBox6.Text;
+            driver.ResidentialAddress = textBox7.Text;
+            driver.WorkingPlace = textBox8.Text;
+            driver.Position = textBox9.Text;
+            driver.PhoneNuber = textBox10.Text;
+            driver.Email = textBox11.Text;
+            driver.Photo = pictureBox1.Image;
+            driver.Comments = textBox13.Text;            
+
+            this.Hide();
+            MessageBox.Show("Данные были успешно сохранены");
         }
     }
 }
