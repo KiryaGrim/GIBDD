@@ -30,13 +30,6 @@ namespace GIBDD
             timer.Tick += Timer_Tick;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            var oldSettings = SettingsManager.GetSettings();
-            oldSettings.IsRemember = checkBox1.Checked;
-            SettingsManager.SaveSettings(oldSettings);
-        }
-
         private void LogIn_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
@@ -68,10 +61,6 @@ namespace GIBDD
             count = 3;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            checkBox1.Checked = SettingsManager.GetSettings().IsRemember;
-        }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
