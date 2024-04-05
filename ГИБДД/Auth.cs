@@ -44,7 +44,7 @@ namespace GIBDD
             {
                 count--;
                 if (count > 0)
-                    MessageBox.Show($"Неверные данные, попробуйте ещё раз. Осталось {count} попыток");
+                    MessageBox.Show($"Неверные данные, попробуйте ещё раз. Осталось {count} попыток", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
                     MessageBox.Show("Превышено количество попыток входа" + Environment.NewLine + "Попробуйте войти через 30 секунд");

@@ -46,34 +46,20 @@ namespace GIBDD
 
         private void CreateDriver_Click(object sender, EventArgs e) // Создаем водителя
         {
-            Driver driver = new Driver();
             try
             {
-                driver.Guid = Guid.NewGuid();
-                driver.FirstName = textBox2.Text;
-                driver.LastName = textBox3.Text;
-                driver.Patronymic = textBox4.Text;
-                driver.Passport = textBox5.Text;
-                driver.RegistationAddress = textBox6.Text;
-                driver.ResidentialAddress = textBox7.Text;
-                driver.WorkingPlace = textBox8.Text;
-                driver.Position = textBox9.Text;
-                driver.PhoneNuber = textBox10.Text;
-                driver.Email = textBox11.Text;
-                driver.Photo = pictureBox1.Image;
-                driver.Comments = textBox13.Text;
-
-                if (textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" ||
+                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" ||
                     textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "" ||
                     textBox9.Text == "" || textBox10.Text == "" || textBox11.Text == "" || textBox13.Text == "")
                     throw new Exception("Не все поля заполнены");
-                this.Hide();
-                MessageBox.Show("Данные были успешно сохранены");
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            }          
+
+            this.Hide();
+            MessageBox.Show("Данные были успешно сохранены");
         }
     }
 }

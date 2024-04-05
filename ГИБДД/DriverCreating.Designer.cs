@@ -1,4 +1,7 @@
-﻿namespace GIBDD
+﻿using System;
+using ГИБДД;
+
+namespace GIBDD
 {
     partial class DriverCreating
     {
