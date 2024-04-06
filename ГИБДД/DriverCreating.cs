@@ -39,7 +39,7 @@ namespace GIBDD
                 {
                     // Если все условия выполнены, прикрепляем изображение к кнопке
                     pictureBox1.Image = bitmap;
-                    ChoosePhoto.Controls.Add(pictureBox1);
+                   
                 }
             }
         }
