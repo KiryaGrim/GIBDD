@@ -198,8 +198,7 @@ namespace GIBDD
             // 
             this.textBox1.Location = new System.Drawing.Point(312, 36);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
+            this.textBox1.Name = "textBox1";            
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 13;
             // 

@@ -35,14 +35,6 @@
             this.CreateDriver = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.GUID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Фамилия = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Имя = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Отчество = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Паспорт = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Адрес_регистрации = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Телефон = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Почта = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // CreateDriver
@@ -68,46 +60,21 @@
             // 
             // listView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.GUID,
-            this.Фамилия,
-            this.Имя,
-            this.Отчество,
-            this.Паспорт,
-            this.Адрес_регистрации,
-            this.Телефон,
-            this.Почта});
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
             this.listView1.Location = new System.Drawing.Point(43, 115);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(974, 407);
+            this.listView1.Size = new System.Drawing.Size(1022, 407);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
-            // 
-            // Имя
-            // 
-            this.Имя.DisplayIndex = 6;
-            // 
-            // Отчество
-            // 
-            this.Отчество.DisplayIndex = 7;
-            // 
-            // Телефон
-            // 
-            this.Телефон.DisplayIndex = 2;
-            // 
-            // Почта
-            // 
-            this.Почта.DisplayIndex = 3;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1108, 554);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CreateDriver);
@@ -124,13 +91,5 @@
         private System.Windows.Forms.Button CreateDriver;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader GUID;
-        private System.Windows.Forms.ColumnHeader Фамилия;
-        private System.Windows.Forms.ColumnHeader Телефон;
-        private System.Windows.Forms.ColumnHeader Почта;
-        private System.Windows.Forms.ColumnHeader Паспорт;
-        private System.Windows.Forms.ColumnHeader Адрес_регистрации;
-        private System.Windows.Forms.ColumnHeader Имя;
-        private System.Windows.Forms.ColumnHeader Отчество;
     }
 }
