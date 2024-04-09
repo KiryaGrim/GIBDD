@@ -118,6 +118,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Auth";
             this.Text = "Авторизация";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

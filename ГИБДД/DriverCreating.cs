@@ -20,6 +20,7 @@ namespace GIBDD
         public DriverCreating()
         {
             InitializeComponent();
+            
         }
 
         private void ChoosePhoto_Click(object sender, EventArgs e)
