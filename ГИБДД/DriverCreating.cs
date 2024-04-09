@@ -74,6 +74,22 @@ namespace GIBDD
                 ListViewItem item = new ListViewItem(new string[] { guid, firstname, lastname, patronymic, passport, 
                     registrationAddress, residentialAddress, workingPlace, position, phoneNumber, email});
 
+                item.Tag = new Driver()
+                {
+                    GUID = Guid.Parse(guid),
+                    FirstName = firstname,
+                    LastName = lastname,
+                    Patronymic = patronymic,
+                    Passport = passport,
+                    RegistrationAddress = registrationAddress,
+                    ResidentialAddress = residentialAddress,
+                    WorkingPlace = workingPlace,
+                    Position = position,
+                    PhoneNuber  = phoneNumber,
+                    Email = email,
+                    Comments = comments
+                };
+
                 DriverCreated?.Invoke(this, new DriverEventArgs(item));
 
                 ClearFields();
