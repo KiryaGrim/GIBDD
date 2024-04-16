@@ -14,7 +14,7 @@ namespace GIBDD
 {
     public partial class DriverCard : Form
     {
-        public DriverCard()
+        public DriverCard(Guid GUID)
         {
             InitializeComponent();
         }

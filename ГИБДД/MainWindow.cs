@@ -29,7 +29,25 @@ namespace ГИБДД
             listView1.Columns.Add("Должность", 70);
             listView1.Columns.Add("Телефон", 65);
             listView1.Columns.Add("Почта", 60);
+            listView1.MouseClick += ListView_MouseClick;
+        }
 
+        private void ListView_MouseClick(object sender, MouseEventArgs e)
+        {
+            // Получаем выбранную строку в ListView
+            ListViewItem selectedItem = listView1.SelectedItems[0];
+
+            // Получаем данные из выбранной строки, например, ID водителя
+            if (Guid.TryParse(selectedItem.SubItems[0].Text, out Guid driverId))
+            {
+                // Открываем форму DriverCard с передачей необходимых данных
+                DriverCard driverCardForm = new DriverCard(driverId);
+                driverCardForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Ошибка при получении ID водителя.");
+            }
         }
 
         private void CreateDriver_Click(object sender, EventArgs e) // Кнопка "Создать", которая открывает окно создания водителя
